@@ -10,3 +10,8 @@ This file describes how to connect local repository with remote one.
 The **hash** is the main commit identifier and allows you to find out its author, date and contents of the committed files.
 Git converts information about commits using the SHA-1 algorithm and for each of them calculates a unique identifier - a hash.
 All hashes, as well as the hash table → information about the commit, Git stores in the .git folder.
+
+#log
+
+You can call not only the full _log_, but also the abbreviated one - this is done with the **git log --oneline** command.
+In the abbreviated _log_, abbreviated hashes are displayed - they can be used in the same way as full hashes.
