@@ -15,3 +15,8 @@ All hashes, as well as the hash table → information about the commit, Git stor
 
 You can call not only the full _log_, but also the abbreviated one - this is done with the **git log --oneline** command.
 In the abbreviated _log_, abbreviated hashes are displayed - they can be used in the same way as full hashes.
+
+#HEAD
+
+Among other files in the .git folder there is a _HEAD_ service file. It points to the most recent commit.
+Instead of the hash of the last commit, you can write the word HEAD - Git will understand you.
