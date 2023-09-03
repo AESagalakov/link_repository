@@ -20,3 +20,10 @@ In the abbreviated _log_, abbreviated hashes are displayed - they can be used in
 
 Among other files in the .git folder there is a _HEAD_ service file. It points to the most recent commit.
 Instead of the hash of the last commit, you can write the word HEAD - Git will understand you.
+
+#status
+
+* The untracked status marks a file that Git knows about, but doesn't track changes to. This status is the opposite of tracked, which includes all files tracked by Git.
+* The file becomes staged after *git add* is executed.
+* The modified status means that the file has been modified.
+* Most files in projects go through the following cycle: “changed” → “added to the commit list” → “committed” → “changed” → and so on.
