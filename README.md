@@ -1,4 +1,4 @@
-# link_repository
+# USEFUL COMMANDs for git
 This file describes how to connect local repository with remote one.
 1. Go to the remote repository page, select the SSH type and copy the URL.
 2. Open a console, navigate to your local repository directory and type: **git remote add**. The command needs to pass two parameters: the name of the remote repository and its URL. Use the word _origin_ as the name. And you copied the URL from the remote repository page.
