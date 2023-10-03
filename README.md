@@ -38,3 +38,39 @@ Instead of the hash of the last commit, you can write the word HEAD - Git will u
 * the commit message is easy to read;
 * it is informative;
 * All messages are in the same style.
+
+#Working with branches
+
+Cloning someone else's repository
+**git clone** _git@github.com:project.git_ - clone the repository with the URL project.git from account to my local computer.
+
+#Creating branches
+
+**git branch** _feature/the-finest-branch_ - create a branch from the current one with the name feature/the-finest-branch;
+**git checkout -b** _feature/the-finest-branch_ - create a branch feature/the-finest-branch and immediately switch to it.
+
+#Branch navigation
+
+**git branch** - show what branches there are in the repository and which one I’m in (the current branch will be marked with a *);
+**git branch -a** - show all known branches, both local (in the local repository) and remote (in origin, or on GitHub).
+**git checkout** _feature/br_ - switch to the feature/br branch.
+
+#Branch comparison
+
+**git diff** _main_ _HEAD_ - show the difference between the main branch and the pointer to HEAD;
+**git diff** _HEAD~2_ _HEAD_ - show the difference between the commit that was two commits ago and the current one.
+
+#Removing branches
+
+**git branch -d** _br-name_ - delete the br-name branch, but only if it is part of main;
+**git branch -D** _br-name_ - Delete the br-name branch, even if it is not merged into main.
+
+#Merging branches
+
+**git merge** _main_ - merge the main branch with the current active branch.
+
+#Working with a remote repository
+
+**git push -u origin** _my-branch_ - push the new branch my-branch to the remote repository and link the local branch with the remote one, so that with additional commits you can simply write git push without -u;
+**git push** _my-branch_ - push additional changes to the my-branch branch that already exists in the remote repository;
+**git pull** - pull changes to the current branch from a remote repository.
