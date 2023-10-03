@@ -74,3 +74,20 @@ Cloning someone else's repository
 **git push -u origin** _my-branch_ - push the new branch my-branch to the remote repository and link the local branch with the remote one, so that with additional commits you can simply write git push without -u;
 **git push** _my-branch_ - push additional changes to the my-branch branch that already exists in the remote repository;
 **git pull** - pull changes to the current branch from a remote repository.
+
+#Adding changes to the latest commit
+
+**git commit --amend --no-edit** - add changes to the last commit and leave the message the same;
+**git commit --amend -m** _"New message"_ - change the message for the last commit to New message.
+
+#Rolling back files and commits
+
+**git restore --staged** _hello.txt_ — move the hello.txt file from the staged state back to untracked or modified;
+**git restore** _hello.txt_ - return the hello.txt file to the latest version that was saved via git commit or git add;
+**git reset --hard** _b576d89_ - remove all uncommitted changes from staging and the “working area” up to the specified commit.
+
+#View changes
+
+**git diff** - show changes in the “working area”, that is, in modified files;
+**git diff** _a9928ab_ _11bada1_ - print the difference between two commits;
+**git diff --staged** - show changes that have been added to staged files.
